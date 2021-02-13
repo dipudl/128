@@ -24,7 +24,6 @@ protected:
             for(int j=0; j<SIZE; j++) {
                 centerText(numbers[i][j]);
 
-                // don't draw on last column
                 cout << "|";
             }
 
@@ -70,7 +69,7 @@ protected:
     // polymorphism (function overloading)
     void printLayout(bool clean) {
         // check operating system of user and execute corresponding system command to clear console
-        if(clean) {
+         if(clean) {
             #if defined _WIN32
                 system("cls");
             #elif defined (__LINUX__) || defined(__gnu_linux__) || defined(__linux__)

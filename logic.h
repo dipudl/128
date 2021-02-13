@@ -14,7 +14,7 @@
 
 class Logic {
 protected:
-    int numbers[SIZE][SIZE] = {0};
+    int numbers[SIZE][SIZE] = {{0}};
     int currentKey, score = 0;
     bool moved = true;
 };
